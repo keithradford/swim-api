@@ -29,7 +29,7 @@ class Coach(models.Model):
 
 class Swimmer(models.Model):
     GENDERS = (
-        ('CH', 'Choose a Gender'),
+        ('N', 'Select...'),
         ('M', 'Male'),
         ('F', 'Female'),
         ('O', 'Other')
@@ -41,7 +41,7 @@ class Swimmer(models.Model):
     gender = models.CharField(
         max_length=2,
         choices=GENDERS,
-        default='CH'
+        default='N'
     )
 
     @property
