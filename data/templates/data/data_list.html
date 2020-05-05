@@ -1,0 +1,10 @@
+<div>
+	<h1><a href="/">Swim</a></h1>
+</div>
+
+{% for swimmer in swimmers %}
+	<div>
+		<h3>{{ swimmer.name }}</h3>
+		<p>{{ swimmer.age }}, {{swimmer.club}}</p>
+	</div>
+{% endfor %}
