@@ -1,0 +1,12 @@
+{% extends 'data/base.html' %}
+
+{% block content %}
+    <div class="swimmer">
+        <h2>{{ swimmer.name }}</h2>
+	<p>{{ swimmer.gender }}, {{ swimmer.age }}, {{ swimmer.club }}<br>Born: {{ swimmer.birthday }}</p>
+    </div>
+    <div class="race data">
+    	<p>Race data...</p>
+	<!--table of all races and times, shortcourse and longcourse -->
+    </div>
+{% endblock %}
