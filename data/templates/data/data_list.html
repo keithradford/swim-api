@@ -1,10 +1,21 @@
-<div>
-	<h1><a href="/">Swim</a></h1>
-</div>
+{% load static %}
+<html>
+	<head>
+		<title>Swim Data</title>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="{% static 'css/data.css' %}">
+	</head>
+	<body>
+		<div class="page-header">
+			<h1><a href="/">Swim</a></h1>
+		</div>
 
-{% for swimmer in swimmers %}
-	<div>
-		<h3>{{ swimmer.name }}</h3>
-		<p>{{ swimmer.age }}, {{swimmer.club}}</p>
-	</div>
-{% endfor %}
+		{% for swimmer in swimmers %}
+			<div class="swimmer">
+				<h3>{{ swimmer.name }}</h3>
+				<p>{{ swimmer.age }}, {{swimmer.club}}</p>
+			</div>
+		{% endfor %}
+	</body>
+</html>	
