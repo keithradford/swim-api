@@ -6,3 +6,5 @@ env
 /static
 .DS_Store
 *.swp
+local_settings.py
+*.log
