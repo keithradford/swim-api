@@ -24,7 +24,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ['SWIM_SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG_VALUE', False)
+# DEBUG = os.environ.get('DEBUG_VALUE', False)
+DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
